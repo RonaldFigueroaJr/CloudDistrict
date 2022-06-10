@@ -1,16 +1,18 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 
 const SALT_ROUNDS = 6;
 
-const postSchema = new Schema({
-  content: { type: String, required: true },
+const postSchema = new Schema(
+  {
+    content: { type: String, required: true },
     image: { type: String },
-    user: { type: Schema.Types.ObjectId, ref: 'User' }
-  
-}, {
-  timestamps: true,
-});
+    user: { type: Schema.Types.ObjectId, ref: "User", required: true },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = mongoose.model('Post', postSchema);
+module.exports = mongoose.model("Post", postSchema);

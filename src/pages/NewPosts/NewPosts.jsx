@@ -1,49 +1,51 @@
-import { useState } from 'react';
-import * as postsAPI from '../../utilities/posts-api';
-import { useNavigate, Link } from 'react-router-dom';
+import { useState } from "react";
+import * as postsAPI from "../../utilities/posts-api";
+import { useNavigate, Link } from "react-router-dom";
 
-export default function NewPosts({ setPosts, posts, post }) {
+export default function NewPosts({ setPosts, posts }) {
   const [formData, setFormData] = useState({
-    content: post ? post.content : '',
-    // image: post.image ? post.image : '',
-  })
+    content: "",
+    image: "",
+  });
 
   const navigate = useNavigate();
 
   function handleChange(evt) {
     setFormData({
-      ...formData, [evt.target.name]: evt.target.value
-    })
-  }
-    console.log(formData)
-  
-    function handleSubmit(evt) {
-      evt.preventDefault();
-      post ? updatePost() : addPost()
-    }
-
-  async function addPost() {
-    const post = await postsAPI.createPost(formData)
-  }
-  
-  async function updatePost() {
-    const updatePost = await postsAPI.update(formData, post._id)
-    const updated = posts.map(p => p._id === updatePost._id ? updatePost : p)
-    setPosts(updated)
-    navigate('../')
+      ...formData,
+      [evt.target.name]: evt.target.value,
+    });
   }
 
-  const hello = () => console.log('hello')
+  async function handleSubmit(evt) {
+    evt.preventDefault();
+    const post = await postsAPI.createPost(formData);
+    setPosts([post, ...posts])
+    navigate("/")
+  }
 
   return (
-
     <div>
       <h1>NewPosts</h1>
       <form onSubmit={handleSubmit}>
-        <input onChange={handleChange} type="text" name="content" value={formData.content} />
-        <input type="submit" />
+        <textarea
+          onChange={handleChange}
+          name="content"
+          placeholder="Enter your content."
+          value={formData.content}
+        />
+        <input
+          onChange={handleChange}
+          type="url"
+          name="image"
+          value={formData.image}
+          placeholder="Paste image URL here."
+        />
+        <button type="submit">Create Post</button>
       </form>
-      <Link to={"/"} onClick={hello}>Go Back</Link>
+      <Link to={"/"}>
+        Go Back
+      </Link>
     </div>
   );
 }
