@@ -5,8 +5,14 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken,
+  deletePost,
 };
+
+async function deletePost(req, res) {
+  const remove = await Post.findByIdAndDelete(req.params.id);
+  res.join(remove);
+}
 
 function checkToken(req, res) {
   console.log(req.user);
