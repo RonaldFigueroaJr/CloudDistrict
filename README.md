@@ -22,6 +22,10 @@
 <details>
 <summary>Functionality</summary>
 
+You are not alone.
+
+
+
 | Description                          | Screenshot    |
 | ------------------------------------ | ------------- |
 | <h3 align="center">Landing Page</h3> | <img src="https://i.gyazo.com/7d4e76ad9e6c5270742ba17810af3658.jpg"/> |
