@@ -22,7 +22,7 @@
 <details>
 <summary>Functionality</summary>
 
-You are not alone.
+<h3>You are not alone.</h3>
 
 
 
