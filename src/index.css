@@ -27,7 +27,7 @@ body {
   background-color: var(--tan-4);
   padding: 2vmin;
   height: 100vh;
-  background-image: url("https://wallpaperaccess.com/full/1311165.jpg");
+  background-image: url("https://wallpaperaccess.com/full/2199583.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -183,4 +183,9 @@ button[type="submit"] {
 
 #userIMG {
   border-radius: 20%;
+}
+
+#homeMessage {
+  background-color: inherit;
+
 }
