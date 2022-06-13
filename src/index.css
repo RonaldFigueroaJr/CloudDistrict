@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+
 :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
@@ -23,6 +27,9 @@ body {
   background-color: var(--tan-4);
   padding: 2vmin;
   height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/1311165.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -79,9 +86,12 @@ code {
 
 .form-container {
   padding: 3vmin;
-  background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
-  border-radius: 1vmin;
+  border: 0.1vmin solid var(--tan-3);
+  border-radius: 5vmin;
+  height: 50px;
+  width: 50px;
+  display: inline-table;
+  justify-content: center;
 }
 
 p.error-message {
@@ -97,9 +107,10 @@ form {
 }
 
 label {
-  font-size: 2vmin;
+  font-size: 3vmin;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 input {
@@ -120,7 +131,7 @@ button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: #3c4872;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -143,10 +154,25 @@ button.btn-xs {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: inherit;
 }
 
 button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
+}
+
+#loginTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e34594, 0 0 40px #e60073, 0 0 50px #b53c78, 0 0 60px #95245c, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }

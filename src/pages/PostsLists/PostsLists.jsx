@@ -6,7 +6,7 @@ import PostCard from '../../components/PostCard/PostCard';
 export default function PostsLists ({ posts }) {
     return (
       <>
-        <h1>PostsLists</h1>
+        <h1>List of Posts</h1>
         {posts.map(p => <PostCard post={p} />) }
       </>
     );

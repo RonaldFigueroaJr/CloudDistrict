@@ -25,7 +25,7 @@ export default function PostDetail({ posts, setPosts }) {
         <NewPosts post={post} setPosts={setPosts} />
       ) : (
         <div>
-          <h1>PostDetail</h1>
+          <h1>Details</h1>
           <p> {post.content} </p>
           <button onClick={() => setShowForm(true)}>Edit</button>
           <button onClick={handleDelete}>Delete</button>

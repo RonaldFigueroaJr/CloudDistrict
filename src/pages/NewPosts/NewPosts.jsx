@@ -21,12 +21,12 @@ export default function NewPosts({ setPosts, posts }) {
     evt.preventDefault();
     const post = await postsAPI.createPost(formData);
     setPosts([post, ...posts])
-    navigate("/")
+    navigate("/posts")
   }
 
   return (
     <div>
-      <h1>NewPosts</h1>
+      <h1>Add a Post!</h1>
       <form onSubmit={handleSubmit}>
         <textarea
           onChange={handleChange}
@@ -41,7 +41,7 @@ export default function NewPosts({ setPosts, posts }) {
           value={formData.image}
           placeholder="Paste image URL here."
         />
-        <button type="submit">Create Post</button>
+        <button type="submit">Create Post!</button>
       </form>
       <Link to={"/"}>
         Go Back
