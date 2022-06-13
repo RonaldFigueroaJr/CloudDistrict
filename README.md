@@ -1,7 +1,7 @@
-<link rel="images" href="images">
+<!-- <link rel="images" href="images">
 <div align="center">
    <img src=""/>
-</div>
+</div> -->
 
 <div align="center">
   <h3>Ronald Figueroa Jr.</h3>`                             
@@ -17,7 +17,7 @@
 </div>
 
 <h1>Description</h1>
-<img align="center"img src=""</p>
+<!-- <img align="center"img src=""</p> -->
 
 <details>
 <summary>Functionality</summary>
