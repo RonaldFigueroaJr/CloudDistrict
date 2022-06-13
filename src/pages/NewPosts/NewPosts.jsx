@@ -20,15 +20,15 @@ export default function NewPosts({ setPosts, posts }) {
   async function handleSubmit(evt) {
     evt.preventDefault();
     const post = await postsAPI.createPost(formData);
-    setPosts([post, ...posts])
-    navigate("/posts")
+    setPosts([post, ...posts]);
+    navigate("/posts");
   }
 
   return (
     <div>
       <h1>Add a Post!</h1>
       <form onSubmit={handleSubmit}>
-        <textarea 
+        <textarea
           onChange={handleChange}
           name="title"
           placeholder="Enter a title."
@@ -49,9 +49,7 @@ export default function NewPosts({ setPosts, posts }) {
         />
         <button type="submit">Create Post!</button>
       </form>
-      <Link to={"/"}>
-        Go Back
-      </Link>
+      <Link to={"/"}>Go Back</Link>
     </div>
   );
 }

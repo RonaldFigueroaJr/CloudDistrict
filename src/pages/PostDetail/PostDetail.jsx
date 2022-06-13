@@ -26,7 +26,7 @@ export default function PostDetail({ posts, setPosts }) {
       ) : (
         <div>
           <h1> {post.title} </h1>
-          <img src={post.image} width="200" height="200" id="userIMG"/>
+          <img src={post.image} width="200" height="200" id="userIMG" />
           <p> {post.content} </p>
           <button onClick={() => setShowForm(true)}>Edit</button>
           <button onClick={handleDelete}>Delete</button>

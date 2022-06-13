@@ -30,9 +30,7 @@ const userSchema = new Schema({
 });
 
 userSchema.pre('save', async function(next) {
-  // 'this' is the user doc
   if (!this.isModified('password')) return next();
-  // the password is either new, or being updated
   this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
 });
 
