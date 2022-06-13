@@ -28,6 +28,12 @@ export default function NewPosts({ setPosts, posts }) {
     <div>
       <h1>Add a Post!</h1>
       <form onSubmit={handleSubmit}>
+        <textarea 
+          onChange={handleChange}
+          name="title"
+          placeholder="Enter a title."
+          value={formData.title}
+        />
         <textarea
           onChange={handleChange}
           name="content"

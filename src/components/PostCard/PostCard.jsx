@@ -7,9 +7,9 @@ export default function PostCard({ post }) {
 
   return (
 
-    <Link to = {`/${post._id}`} >
+    <Link to = {`/${post._id}`} class="pLists">
         <div>
-            <h1> { post.content } </h1>
+            <h1 class="pLists"> { post.title } </h1>
         </div>
     </Link>
   );

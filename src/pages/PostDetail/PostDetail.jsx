@@ -25,7 +25,8 @@ export default function PostDetail({ posts, setPosts }) {
         <NewPosts post={post} setPosts={setPosts} />
       ) : (
         <div>
-          <h1>Details</h1>
+          <h1> {post.title} </h1>
+          <img src={post.image} width="200" height="200" id="userIMG"/>
           <p> {post.content} </p>
           <button onClick={() => setShowForm(true)}>Edit</button>
           <button onClick={handleDelete}>Delete</button>
