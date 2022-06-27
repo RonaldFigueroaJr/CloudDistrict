@@ -4,12 +4,12 @@
 </div> -->
 
 <div align="center">
-  <h3>Ronald Figueroa Jr.</h3>`                             
-  <a href="https://github.com/ronaldfigueroajr"_target="_blank">
+  <h3>Ronald Figueroa Jr.</h3>                            
+<!--   <a href="https://github.com/ronaldfigueroajr"_target="_blank">
     <img src="https://img.shields.io/badge/-Portfolio:ronaldigueroajr.github.io-darkgreen?style=flat&logo=medium"/>
-  </a>
+  </a> -->
   <a href="https://www.linkedin.com/in/ronaldfigueroajr/" target="_blank">
-    <img src="https://img.shields.io/badge/-linkedin.com/in/ronaldfigueroajr-blue?style=flat&``logo=Linkedin&logoColor=white">
+    <img src="https://img.shields.io/badge/-linkedin.com/in/ronaldfigueroajr-blue?style=flat&logo=Linkedin&logoColor=white">
   </a> 
   <a href="figueroajrronald@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-figueroajrronald@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
@@ -20,7 +20,7 @@
 <!-- <img align="center"img src=""</p> -->
 
 <details>
-<summary>Functionality</summary>
+<summary> ⚙️ Functionality</summary>
 
 <h3>You are not alone.</h3>
 
@@ -34,7 +34,7 @@
 
 </details>
 
-##Technologies Used
+## Technologies Used
 
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
